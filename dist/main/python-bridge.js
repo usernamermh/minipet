@@ -63,7 +63,8 @@ class PythonBridge extends events_1.EventEmitter {
                 env: {
                     ...process.env,
                     PYTHONUNBUFFERED: '1'
-                }
+                },
+                windowsHide: true
             });
             // 监听标准输出
             if (this.pythonProcess.stdout) {

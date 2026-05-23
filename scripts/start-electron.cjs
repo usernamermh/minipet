@@ -12,9 +12,12 @@ function resolveElectronBinary() {
 
 const electronBinary = resolveElectronBinary();
 const child = spawn(electronBinary, process.argv.slice(2), {
-  stdio: 'inherit',
-  windowsHide: false,
+  stdio: 'ignore',
+  windowsHide: true,
+  detached: true,
 });
+
+child.unref();
 
 child.on('exit', (code) => {
   process.exit(code ?? 0);

@@ -1,5 +1,7 @@
 {
   "pet": {
+    "sprite_themes": ["cat_1-cat_6", "tiny_cat", "blue_bird"],
+    "sprite_theme": "cat_1",
     "name": "小乖",
     "stage": "baby",
     "base_hunger_decay": 0.1,
@@ -56,6 +58,8 @@
   "animation": {
     "frame_rate": 30,
     "idle_frame_rate": 10,
+    "motion_speed_multiplier": 0.8,
+    "sprite_frame_speed_multiplier": 1.0,
     "idle_animations": [
       "idle",
       "blink",

@@ -167,6 +167,34 @@
       "timestamp": "2026-05-23T14:43:56.342254",
       "metadata": {},
       "importance": 8
+    },
+    {
+      "content": "ts 和 js文件有什么不同",
+      "role": "user",
+      "timestamp": "2026-05-23T15:02:15.006920",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "（宠物似乎有点累了，让它休息一下吧~）",
+      "role": "assistant",
+      "timestamp": "2026-05-23T15:02:15.008876",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "你好你好",
+      "role": "user",
+      "timestamp": "2026-05-23T15:03:26.946739",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "（宠物似乎有点累了，让它休息一下吧~）",
+      "role": "assistant",
+      "timestamp": "2026-05-23T15:03:26.949748",
+      "metadata": {},
+      "importance": 5
     }
   ]
 }

@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const electron_1 = require("electron");
 electron_1.contextBridge.exposeInMainWorld('desktopPet', {
     getState: () => electron_1.ipcRenderer.invoke('desktop-pet:get-state'),
+    getAssetConfig: () => electron_1.ipcRenderer.invoke('desktop-pet:get-asset-config'),
     performInteraction: (type) => electron_1.ipcRenderer.invoke('desktop-pet:perform-interaction', type),
     sendChat: (message) => electron_1.ipcRenderer.invoke('desktop-pet:send-chat', message),
     updateSetting: (setting, value) => electron_1.ipcRenderer.invoke('desktop-pet:update-setting', setting, value),

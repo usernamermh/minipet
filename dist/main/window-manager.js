@@ -260,11 +260,12 @@ class WindowManager {
                 bouncedY: true,
             };
         }
+        const petBounds = this.fixedPetViewportBounds;
         const bounds = {
-            x: 0,
-            y: 0,
-            width: this.windowSize.width,
-            height: this.windowSize.height,
+            x: petBounds.x,
+            y: petBounds.y,
+            width: petBounds.width,
+            height: petBounds.height,
         };
         const display = anchorPoint
             ? electron_1.screen.getDisplayNearestPoint({
@@ -276,10 +277,10 @@ class WindowManager {
                 y: Math.round(targetY + bounds.height / 2),
             });
         const displayBounds = display.bounds;
-        const minX = displayBounds.x;
-        const maxX = Math.max(minX, displayBounds.x + displayBounds.width - bounds.width);
-        const minY = displayBounds.y;
-        const maxY = Math.max(minY, displayBounds.y + displayBounds.height - bounds.height);
+        const minX = displayBounds.x - bounds.x - 200;
+        const maxX = Math.max(minX, displayBounds.x + displayBounds.width - (bounds.x + bounds.width));
+        const minY = displayBounds.y - bounds.y - 200;
+        const maxY = Math.max(minY, displayBounds.y + displayBounds.height - (bounds.y + bounds.height));
         const nextX = Math.max(minX, Math.min(maxX, Math.round(targetX)));
         const nextY = Math.max(minY, Math.min(maxY, Math.round(targetY)));
         const bouncedX = nextX !== Math.round(targetX);
@@ -349,7 +350,8 @@ class WindowManager {
         })();
         const targetX = Math.round(startWindowPosition.x + (cursorPoint.x - startCursorPoint.x));
         const targetY = Math.round(startWindowPosition.y + (cursorPoint.y - startCursorPoint.y));
-        this.mainWindow.setPosition(targetX, targetY);
+        const clamped = this.clampWindowPosition(targetX, targetY, cursorPoint);
+        this.mainWindow.setPosition(clamped.nextX, clamped.nextY);
         const [actualX, actualY] = this.mainWindow.getPosition();
         this.writeDragLog('drag-move-tick', {
             mouse: {
@@ -368,6 +370,8 @@ class WindowManager {
             startWindowPosition,
             targetX,
             targetY,
+            clampedX: clamped.nextX,
+            clampedY: clamped.nextY,
         });
         if (actualX !== beforeX || actualY !== beforeY) {
             // console.log('[Window] Drag move tick:', {
@@ -392,8 +396,8 @@ class WindowManager {
         return {
             nextX: actualX,
             nextY: actualY,
-            bouncedX: actualX !== targetX,
-            bouncedY: actualY !== targetY,
+            bouncedX: clamped.bouncedX || actualX !== clamped.nextX,
+            bouncedY: clamped.bouncedY || actualY !== clamped.nextY,
         };
     }
     startCursorDrag() {

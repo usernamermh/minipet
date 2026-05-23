@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const electron_1 = require("electron");
+const fs_1 = require("fs");
 const path_1 = require("path");
 const python_bridge_1 = require("./python-bridge");
 const state_persister_1 = require("./state-persister");
@@ -95,6 +96,7 @@ class DesktopPet {
     }
     registerIpcHandlers() {
         electron_1.ipcMain.handle('desktop-pet:get-state', () => this.getFreshState());
+        electron_1.ipcMain.handle('desktop-pet:get-asset-config', () => this.getAssetConfig());
         electron_1.ipcMain.handle('desktop-pet:perform-interaction', (_event, type) => this.performInteraction(type));
         electron_1.ipcMain.handle('desktop-pet:send-chat', (_event, message) => this.sendChat(message));
         electron_1.ipcMain.handle('desktop-pet:update-setting', (_event, setting, value) => {
@@ -151,6 +153,28 @@ class DesktopPet {
             electron_1.app.quit();
             return true;
         });
+    }
+    getAssetConfig() {
+        const configPath = (0, path_1.join)(__dirname, '../../config.json');
+        try {
+            if ((0, fs_1.existsSync)(configPath)) {
+                const raw = (0, fs_1.readFileSync)(configPath, 'utf-8');
+                const parsed = JSON.parse(raw);
+                return {
+                    spriteTheme: parsed?.pet?.sprite_theme || 'cat_1',
+                    motionSpeedMultiplier: parsed?.animation?.motion_speed_multiplier ?? 1.0,
+                    spriteFrameSpeedMultiplier: parsed?.animation?.sprite_frame_speed_multiplier ?? 1.0,
+                };
+            }
+        }
+        catch (error) {
+            console.error('[Main] Failed to read asset config:', error);
+        }
+        return {
+            spriteTheme: 'cat_1',
+            motionSpeedMultiplier: 1.0,
+            spriteFrameSpeedMultiplier: 1.0,
+        };
     }
     getFreshState() {
         const state = this.statePersister?.getState();

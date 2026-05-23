@@ -8,16 +8,204 @@ const TEXT = {
     wandering: '\u6211\u5728\u684c\u9762\u4e0a\u6563\u6563\u6b65\u3002',
 };
 const SPRITE_FRAME_SIZE = 50;
-const SPRITE_ASSET_ROOT = '../../resources/animations/luizmelo_pet_cats/Pet Cats Pack/Cat-1/';
-const SPRITE_FILES = {
-    idle: ['Cat-1-Idle.png'],
-    walk: ['Cat-1-Walk.png'],
-    sleep: ['Cat-1-Sleeping1.png', 'Cat-1-Sleeping2.png'],
-    playful: ['Cat-1-Run.png'],
-    content: ['Cat-1-Meow.png'],
-    needy: ['Cat-1-Meow.png'],
-    pet: ['Cat-1-Licking 1.png'],
+const THEME_LIBRARY = {
+    cat_1: {
+        mode: 'sheet',
+        renderScale: {
+            baby: 3.1,
+            teen: 3.5,
+            adult: 3.9,
+        },
+        root: '../../resources/animations/luizmelo_pet_cats/Pet Cats Pack/Cat-1/',
+        animations: {
+            idle: ['Cat-1-Idle.png'],
+            walk: ['Cat-1-Walk.png'],
+            sleep: ['Cat-1-Sleeping1.png', 'Cat-1-Sleeping2.png'],
+            playful: ['Cat-1-Run.png'],
+            content: ['Cat-1-Meow.png'],
+            needy: ['Cat-1-Meow.png'],
+            pet: ['Cat-1-Licking 1.png'],
+        },
+    },
+    cat_2: {
+        mode: 'sheet',
+        renderScale: {
+            baby: 3.1,
+            teen: 3.5,
+            adult: 3.9,
+        },
+        root: '../../resources/animations/luizmelo_pet_cats/Pet Cats Pack/Cat-2/',
+        animations: {
+            idle: ['Cat-2-Idle.png'],
+            walk: ['Cat-2-Walk.png'],
+            sleep: ['Cat-2-Sleeping1.png', 'Cat-2-Sleeping2.png'],
+            playful: ['Cat-2-Run.png'],
+            content: ['Cat-2-Meow.png'],
+            needy: ['Cat-2-Meow.png'],
+            pet: ['Cat-2-Licking 1.png'],
+        },
+    },
+    cat_3: {
+        mode: 'sheet',
+        renderScale: {
+            baby: 3.1,
+            teen: 3.5,
+            adult: 3.9,
+        },
+        root: '../../resources/animations/luizmelo_pet_cats/Pet Cats Pack/Cat-3/',
+        animations: {
+            idle: ['Cat-3-Idle.png'],
+            walk: ['Cat-3-Walk.png'],
+            sleep: ['Cat-3-Sleeping1.png', 'Cat-3-Sleeping2.png'],
+            playful: ['Cat-3-Run.png'],
+            content: ['Cat-3-Meow.png'],
+            needy: ['Cat-3-Meow.png'],
+            pet: ['Cat-3-Licking 1.png'],
+        },
+    },
+    cat_4: {
+        mode: 'sheet',
+        renderScale: {
+            baby: 3.1,
+            teen: 3.5,
+            adult: 3.9,
+        },
+        root: '../../resources/animations/luizmelo_pet_cats/Pet Cats Pack/Cat-4/',
+        animations: {
+            idle: ['Cat-4-Idle.png'],
+            walk: ['Cat-4-Walk.png'],
+            sleep: ['Cat-4-Sleeping1.png', 'Cat-4-Sleeping2.png'],
+            playful: ['Cat-4-Run.png'],
+            content: ['Cat-4-Meow.png'],
+            needy: ['Cat-4-Meow.png'],
+            pet: ['Cat-4-Licking 1.png'],
+        },
+    },
+    cat_5: {
+        mode: 'sheet',
+        renderScale: {
+            baby: 3.1,
+            teen: 3.5,
+            adult: 3.9,
+        },
+        root: '../../resources/animations/luizmelo_pet_cats/Pet Cats Pack/Cat-5/',
+        animations: {
+            idle: ['Cat-5-Idle.png'],
+            walk: ['Cat-5-Walk.png'],
+            sleep: ['Cat-5-Sleeping1.png', 'Cat-5-Sleeping2.png'],
+            playful: ['Cat-5-Run.png'],
+            content: ['Cat-5-Meow.png'],
+            needy: ['Cat-5-Meow.png'],
+            pet: ['Cat-5-Licking 1.png'],
+        },
+    },
+    cat_6: {
+        mode: 'sheet',
+        renderScale: {
+            baby: 3.1,
+            teen: 3.5,
+            adult: 3.9,
+        },
+        root: '../../resources/animations/luizmelo_pet_cats/Pet Cats Pack/Cat-6/',
+        animations: {
+            idle: ['Cat-6-Idle.png'],
+            walk: ['Cat-6-Walk.png'],
+            sleep: ['Cat-6-Sleeping1.png', 'Cat-6-Sleeping2.png'],
+            playful: ['Cat-6-Run.png'],
+            content: ['Cat-6-Meow.png'],
+            needy: ['Cat-6-Meow.png'],
+            pet: ['Cat-6-Licking 1.png'],
+        },
+    },
+    tiny_cat: {
+        mode: 'frames',
+        renderScale: {
+            baby: 0.34,
+            teen: 0.38,
+            adult: 0.42,
+        },
+        root: '../../resources/animations/external_packs/extracted/tiny-cat/TINY CAT SPRITE/',
+        animations: {
+            idle: [
+                '01_Idle/__Cat_Idle_000.png',
+                '01_Idle/__Cat_Idle_001.png',
+                '01_Idle/__Cat_Idle_002.png',
+                '01_Idle/__Cat_Idle_003.png',
+                '01_Idle/__Cat_Idle_004.png',
+                '01_Idle/__Cat_Idle_005.png',
+                '01_Idle/__Cat_Idle_006.png',
+                '01_Idle/__Cat_Idle_007.png',
+                '01_Idle/__Cat_Idle_008.png',
+                '01_Idle/__Cat_Idle_009.png',
+                '01_Idle/__Cat_Idle_010.png',
+                '01_Idle/__Cat_Idle_011.png',
+            ],
+            walk: [
+                '02_Run/__Cat_Run_000.png',
+                '02_Run/__Cat_Run_001.png',
+                '02_Run/__Cat_Run_002.png',
+                '02_Run/__Cat_Run_003.png',
+                '02_Run/__Cat_Run_004.png',
+                '02_Run/__Cat_Run_005.png',
+                '02_Run/__Cat_Run_006.png',
+                '02_Run/__Cat_Run_007.png',
+                '02_Run/__Cat_Run_008.png',
+                '02_Run/__Cat_Run_009.png',
+            ],
+            sleep: [
+                '01_Idle/__Cat_Idle_000.png',
+                '01_Idle/__Cat_Idle_001.png',
+                '01_Idle/__Cat_Idle_002.png',
+            ],
+            playful: [
+                '02_Run/__Cat_Run_000.png',
+                '02_Run/__Cat_Run_001.png',
+                '02_Run/__Cat_Run_002.png',
+                '02_Run/__Cat_Run_003.png',
+                '02_Run/__Cat_Run_004.png',
+                '02_Run/__Cat_Run_005.png',
+                '02_Run/__Cat_Run_006.png',
+                '02_Run/__Cat_Run_007.png',
+                '02_Run/__Cat_Run_008.png',
+                '02_Run/__Cat_Run_009.png',
+            ],
+            content: [
+                '01_Idle/__Cat_Idle_003.png',
+                '01_Idle/__Cat_Idle_004.png',
+                '01_Idle/__Cat_Idle_005.png',
+            ],
+            needy: [
+                '01_Idle/__Cat_Idle_006.png',
+                '01_Idle/__Cat_Idle_007.png',
+                '01_Idle/__Cat_Idle_008.png',
+            ],
+            pet: [
+                '01_Idle/__Cat_Idle_009.png',
+                '01_Idle/__Cat_Idle_010.png',
+                '01_Idle/__Cat_Idle_011.png',
+            ],
+        },
+    },
+    blue_bird: {
+        mode: 'frames',
+        renderScale: {
+            baby: 0.17,
+            teen: 0.19,
+            adult: 0.21,
+        },
+        root: '../../resources/animations/external_packs/extracted/blue-bird/Transparent PNG/',
+        animations: {
+            idle: ['frame-1.png', 'frame-2.png', 'frame-3.png', 'frame-4.png'],
+            walk: ['frame-1.png', 'frame-2.png', 'frame-3.png', 'frame-4.png', 'frame-5.png', 'frame-6.png', 'frame-7.png', 'frame-8.png'],
+            sleep: ['frame-1.png', 'frame-2.png'],
+            playful: ['frame-1.png', 'frame-2.png', 'frame-3.png', 'frame-4.png', 'frame-5.png', 'frame-6.png', 'frame-7.png', 'frame-8.png'],
+            content: ['frame-3.png', 'frame-4.png', 'frame-5.png'],
+            needy: ['frame-6.png', 'frame-7.png', 'frame-8.png'],
+            pet: ['frame-2.png', 'frame-3.png', 'frame-4.png'],
+        },
+    },
 };
+let currentSpriteThemeId = 'cat_1';
 const stage = document.getElementById('stage');
 const canvas = document.getElementById('petCanvas');
 const bubble = document.getElementById('bubble');
@@ -27,6 +215,7 @@ const chatInput = document.getElementById('chatInput');
 const sendBtn = document.getElementById('sendBtn');
 const petMenu = document.getElementById('petMenu');
 const dockHint = document.getElementById('dockHint');
+const hud = document.getElementById('hud');
 const petStageLabel = document.getElementById('petStageLabel');
 const petLevelLabel = document.getElementById('petLevelLabel');
 const petMoodLabel = document.getElementById('petMoodLabel');
@@ -65,6 +254,8 @@ let spriteAnimations = {};
 let lastRenderedPetBounds = null;
 let sendingChat = false;
 let lastReportedViewportSignature = '';
+let motionSpeedMultiplier = 1;
+let spriteFrameSpeedMultiplier = 1;
 const DEBUG_RENDERER = false;
 function debugLog(message, payload) {
     if (!DEBUG_RENDERER) {
@@ -76,12 +267,38 @@ function debugLog(message, payload) {
     }
     console.log(`[Renderer] ${message}`, payload);
 }
+function getCurrentTheme() {
+    return THEME_LIBRARY[currentSpriteThemeId] ?? THEME_LIBRARY.cat_1;
+}
+function createSingleImageFrame(image) {
+    return {
+        image,
+        sx: 0,
+        sy: 0,
+        sw: image.width,
+        sh: image.height,
+    };
+}
+function applySpriteTheme(themeId) {
+    currentSpriteThemeId = THEME_LIBRARY[themeId] ? themeId : 'cat_1';
+    spriteAssetsReady = false;
+    spriteAssetsFailed = false;
+    spriteLoadStarted = false;
+    spriteAnimations = {};
+    debugLog('sprite theme applied', { themeId: currentSpriteThemeId });
+}
+function setAnimationConfig(config) {
+    const motionSpeed = Number(config?.motionSpeedMultiplier);
+    const spriteSpeed = Number(config?.spriteFrameSpeedMultiplier);
+    motionSpeedMultiplier = Number.isFinite(motionSpeed) && motionSpeed > 0 ? motionSpeed : 1;
+    spriteFrameSpeedMultiplier = Number.isFinite(spriteSpeed) && spriteSpeed > 0 ? spriteSpeed : 1;
+}
 function pauseAutoWalk(durationMs = 12000) {
     lastUserActionAt = Date.now();
     walkPauseUntil = Math.max(walkPauseUntil, lastUserActionAt + durationMs);
 }
 function buildSpriteUrl(fileName) {
-    return new URL(`${SPRITE_ASSET_ROOT}${fileName}`, import.meta.url).href;
+    return new URL(`${getCurrentTheme().root}${fileName}`, import.meta.url).href;
 }
 function loadImage(url) {
     return new Promise((resolve, reject) => {
@@ -111,16 +328,20 @@ async function ensureSpriteAssets() {
         return;
     }
     spriteLoadStarted = true;
-    debugLog('loading sprite assets', { root: buildSpriteUrl('') });
+    const theme = getCurrentTheme();
+    debugLog('loading sprite assets', { theme: currentSpriteThemeId, root: buildSpriteUrl('') });
     try {
-        const uniqueFiles = Array.from(new Set(Object.values(SPRITE_FILES).flat()));
+        const uniqueFiles = Array.from(new Set(Object.values(theme.animations).flat()));
         const imageEntries = await Promise.all(uniqueFiles.map(async (fileName) => [fileName, await loadImage(buildSpriteUrl(fileName))]));
         const imageMap = new Map(imageEntries);
         const nextAnimations = {};
-        Object.keys(SPRITE_FILES).forEach((motion) => {
-            const frames = SPRITE_FILES[motion].flatMap((fileName) => {
+        Object.keys(theme.animations).forEach((motion) => {
+            const frames = theme.animations[motion].flatMap((fileName) => {
                 const image = imageMap.get(fileName);
-                return image ? sliceSpriteSheet(image) : [];
+                if (!image) {
+                    return [];
+                }
+                return theme.mode === 'frames' ? [createSingleImageFrame(image)] : sliceSpriteSheet(image);
             });
             nextAnimations[motion] = frames;
         });
@@ -205,10 +426,14 @@ function setPointerInteractive(interactive) {
     pointerInteractive = interactive;
     void window.desktopPet.setPointerMode(interactive);
 }
+function setHudVisible(visible) {
+    hud.classList.toggle('show', visible);
+}
 function updatePointerModeFromPoint(x, y) {
     const overPet = isPointOnPetShape(x, y);
     const overInput = isElementVisible(inputDock) && isPointInsideRect(x, y, inputDock.getBoundingClientRect());
     const overMenu = isElementVisible(petMenu) && isPointInsideRect(x, y, petMenu.getBoundingClientRect());
+    setHudVisible(overPet);
     setPointerInteractive(dragging || overPet || overInput || overMenu);
 }
 function reportPetViewportBounds(force = false) {
@@ -360,7 +585,7 @@ function drawPet() {
     if (spriteAssetsReady && drawSpritePet(motion)) {
         return;
     }
-    animationTick += state.settings.lowPowerMode ? 0.02 : 0.04;
+    animationTick += (state.settings.lowPowerMode ? 0.02 : 0.04) * motionSpeedMultiplier;
     const width = canvas.width;
     const height = canvas.height;
     const centerX = width / 2;
@@ -464,11 +689,12 @@ function drawSpritePet(motion) {
     if (!state) {
         return false;
     }
+    const theme = getCurrentTheme();
     const frames = spriteAnimations[motion] ?? spriteAnimations.idle;
     if (!frames || frames.length === 0) {
         return false;
     }
-    animationTick += state.settings.lowPowerMode ? 0.018 : 0.04;
+    animationTick += (state.settings.lowPowerMode ? 0.018 : 0.04) * motionSpeedMultiplier;
     const width = canvas.width;
     const height = canvas.height;
     const centerX = width / 2;
@@ -476,10 +702,10 @@ function drawSpritePet(motion) {
     const bobAmount = motion === 'sleep' ? 2 : motion === 'walk' ? 3.2 : motion === 'playful' ? 4.2 : 2.4;
     const bob = Math.sin(animationTick) * bobAmount;
     const shadowWidth = motion === 'sleep' ? 54 : motion === 'walk' ? 64 : 58;
-    const frameStep = motion === 'walk' ? 8.5 : motion === 'playful' ? 10.5 : motion === 'pet' ? 7.5 : 6.5;
+    const frameStep = (motion === 'walk' ? 8.5 : motion === 'playful' ? 10.5 : motion === 'pet' ? 7.5 : 6.5) * spriteFrameSpeedMultiplier;
     const frameIndex = Math.floor(animationTick * frameStep) % frames.length;
     const frame = frames[frameIndex];
-    const stageScale = state.stage === 'baby' ? 3.1 : state.stage === 'teen' ? 3.5 : 3.9;
+    const stageScale = theme.renderScale?.[state.stage] ?? (state.stage === 'baby' ? 3.1 : state.stage === 'teen' ? 3.5 : 3.9);
     const drawWidth = frame.sw * stageScale;
     const drawHeight = frame.sh * stageScale;
     const drawX = centerX - drawWidth / 2;
@@ -572,13 +798,13 @@ async function updateAutoWalk() {
         showBubble(TEXT.wandering);
     }
     try {
-        const result = await window.desktopPet.nudgeWindow(walkDirectionX * walkSpeed, walkDirectionY * walkSpeed);
-        if (result.bouncedX) {
-            walkDirectionX *= -1;
-        }
-        if (result.bouncedY) {
-            walkDirectionY *= -1;
-        }
+        console.log('[Renderer] Random walk animation tick:', {
+            x: window.screenX,
+            y: window.screenY,
+            directionX: walkDirectionX,
+            directionY: walkDirectionY,
+            speed: walkSpeed,
+        });
     }
     finally {
         walkInFlight = false;
@@ -760,6 +986,16 @@ async function init() {
         hasDesktopPetApi: Boolean(window.desktopPet),
         hasCanvasContext: Boolean(ctx),
     });
+    try {
+        const assetConfig = await window.desktopPet.getAssetConfig();
+        applySpriteTheme(assetConfig?.spriteTheme || 'cat_1');
+        setAnimationConfig(assetConfig);
+    }
+    catch (error) {
+        console.error('[Renderer] Failed to load asset config, using default theme:', error);
+        applySpriteTheme('cat_1');
+        setAnimationConfig(null);
+    }
     void ensureSpriteAssets();
     bindEvents();
     window.desktopPet.onStateUpdated((nextState) => {
