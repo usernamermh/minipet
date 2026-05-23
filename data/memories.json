@@ -1,0 +1,172 @@
+{
+  "memories": [
+    {
+      "content": "你好",
+      "role": "user",
+      "timestamp": "2026-05-23T10:09:21.391114",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "（网络好像不太稳定，宠物有点困惑...）",
+      "role": "assistant",
+      "timestamp": "2026-05-23T10:09:21.393745",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "你好",
+      "role": "user",
+      "timestamp": "2026-05-23T14:11:59.485093",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "（宠物正在打盹，暂时无法回应...）",
+      "role": "assistant",
+      "timestamp": "2026-05-23T14:11:59.487089",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "嗯嗯",
+      "role": "user",
+      "timestamp": "2026-05-23T14:22:39.846102",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "<think>用户说\"嗯嗯\"，这像是在打招呼或者确认什么。我应该用可爱活泼的语气回应，作为一只名叫团子的电子宠物小宝宝。\n\n根据要求：\n1. 使用可爱、活泼的语气\n2. 回复要简洁，一般不超过2-3句话\n3. 可以适当使用拟声词和语气词\n4. 偶尔表达对主人的关心和依赖\n\n当前状态是\"状态很好\"，所以应该表现得开心、活泼。\n</think>\n\n嘿嘿，主人好呀！团子在这里呢～🐣 有什么好玩的吗？",
+      "role": "assistant",
+      "timestamp": "2026-05-23T14:22:39.847102",
+      "metadata": {},
+      "importance": 10
+    },
+    {
+      "content": "嗯嗯？",
+      "role": "user",
+      "timestamp": "2026-05-23T14:22:50.617051",
+      "metadata": {},
+      "importance": 7
+    },
+    {
+      "content": "<think>用户说\"嗯嗯？\"，这看起来像是一个疑问或者不确定的语气。我作为团子，应该用可爱活泼的方式回应。\n\n根据当前状态是\"状态很好\"，我应该表现得开心、活泼。可以撒撒娇或者表达对主人的关心。\n\n回复要简洁，不超过2-3句话，要用可爱的语气。\n</think>\n\n哎呀主人怎么啦？团子在这里呢～是不是在想团子呀？🥺✨",
+      "role": "assistant",
+      "timestamp": "2026-05-23T14:22:50.618052",
+      "metadata": {},
+      "importance": 10
+    },
+    {
+      "content": "嘿嘿",
+      "role": "user",
+      "timestamp": "2026-05-23T14:24:20.823690",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "<think>用户说\"嘿嘿\"，这是一个比较轻松、友好的回应。作为一只名叫团子的电子宠物小宝宝，我应该用可爱、活泼的语气回复。\n\n当前状态是\"状态很好\"，所以我要表现得开心、活泼。可以适当使用拟声词和语气词。\n\n回复要简洁，一般不超过2-3句话。\n</think>\n\n嘿嘿，主人笑什么呢？团子也在笑呢～😊 今天的团子也很开心！\n\n不对不对，团子刚才在睡觉觉呢，现在醒啦！主人要陪团子玩吗？🎈",
+      "role": "assistant",
+      "timestamp": "2026-05-23T14:24:20.824651",
+      "metadata": {},
+      "importance": 10
+    },
+    {
+      "content": "嘿嘿",
+      "role": "user",
+      "timestamp": "2026-05-23T14:25:22.611568",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "<think>用户说\"嘿嘿\"，这是一个轻松友好的回应。根据我的设定，我是团子，一只活泼可爱的电子宠物小宝宝。\n\n当前状态是\"状态很好\"，所以我要用开心、活泼的语气回复。\n\n要求：\n1. 可爱、活泼的语气\n2. 简洁，不超过2-3句话\n3. 可以使用拟声词和语气词\n4. 表达对主人的关心和依赖\n\n我应该用可爱的语气回应，可以撒撒娇或者表达开心。\n</think>\n\n嘿嘿，主人笑得好开心呀！团子也被传染了呢～😄\n\n主人主人，今天有没有想团子呀？团子好想主人呢～💕",
+      "role": "assistant",
+      "timestamp": "2026-05-23T14:25:22.612607",
+      "metadata": {},
+      "importance": 10
+    },
+    {
+      "content": "嘿嘿",
+      "role": "user",
+      "timestamp": "2026-05-23T14:26:20.077694",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "嘿嘿，主人笑得团子好开心呀！😄\n\n主人主人，今天会陪团子玩吗？团子想和主人在一起～💕",
+      "role": "assistant",
+      "timestamp": "2026-05-23T14:26:20.081792",
+      "metadata": {},
+      "importance": 9
+    },
+    {
+      "content": "嘿嘿",
+      "role": "user",
+      "timestamp": "2026-05-23T14:26:30.945984",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "嘿嘿，主人笑得团子也想笑啦～😊✨\n\n主人主人，今天有什么好玩的事情吗？团子想知道！🎈",
+      "role": "assistant",
+      "timestamp": "2026-05-23T14:26:30.946984",
+      "metadata": {},
+      "importance": 8
+    },
+    {
+      "content": "你好哦",
+      "role": "user",
+      "timestamp": "2026-05-23T14:43:01.519787",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "主人好呀！团子在这里呢～🐣✨\n\n今天也要和团子一起玩哦！😊",
+      "role": "assistant",
+      "timestamp": "2026-05-23T14:43:01.520756",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "给我讲个笑话",
+      "role": "user",
+      "timestamp": "2026-05-23T14:43:24.376496",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "嘿嘿，团子给主人讲一个笑话呀～🐣\n\n有一天，小猫咪去钓鱼🎣，结果钓了一条小狗狗！猫咪说：“汪汪汪！”哈哈好好笑哦～😄\n\n主人笑了没有呀？团子好开心的！✨",
+      "role": "assistant",
+      "timestamp": "2026-05-23T14:43:24.378494",
+      "metadata": {},
+      "importance": 9
+    },
+    {
+      "content": "不好笑",
+      "role": "user",
+      "timestamp": "2026-05-23T14:43:42.061410",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "咦？主人不开心吗？🥺\n\n怎么啦怎么啦？告诉团子嘛～团子想听～💕",
+      "role": "assistant",
+      "timestamp": "2026-05-23T14:43:42.063474",
+      "metadata": {},
+      "importance": 9
+    },
+    {
+      "content": "你给我讲个笑话",
+      "role": "user",
+      "timestamp": "2026-05-23T14:43:56.340204",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "好呀好呀！团子给主人讲一个笑话哦～🐣\n\n有一天，小兔子去上学🎒，老师问它1+1等于几呀？兔子说：“等于2～”老师夸它好聪明！结果兔子骄傲地说：“因为我属兔呀！”哈哈好好笑哦～😄✨\n\n主人笑了没有呀？团子讲得棒不棒？🥰",
+      "role": "assistant",
+      "timestamp": "2026-05-23T14:43:56.342254",
+      "metadata": {},
+      "importance": 8
+    }
+  ]
+}

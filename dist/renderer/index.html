@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * { margin:0; padding:0; }
+        html,body {
+            width:100%; height:100%;
+            background: #333;
+            overflow:hidden;
+            -webkit-app-region: no-drag;
+        }
+        canvas { display:block; width:100%; height:100%; }
+    </style>
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <div id="err" style="position:fixed;top:0;left:0;color:red;font-size:10px;background:white;"></div>
+    <script>
+    try {
+        var c = document.getElementById('c');
+        var ctx = c.getContext('2d');
+        c.width = 256;
+        c.height = 256;
+
+        // Simple test: red circle
+        ctx.fillStyle = '#ff4444';
+        ctx.beginPath();
+        ctx.arc(128, 128, 80, 0, Math.PI*2);
+        ctx.fill();
+        ctx.fillStyle = 'white';
+        ctx.font = '20px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillText('RENDER OK', 128, 132);
+
+        document.getElementById('err').textContent = 'JS loaded OK, canvas='+c.width+'x'+c.height;
+    } catch(e) {
+        document.getElementById('err').textContent = 'ERROR: '+e.message;
+    }
+    </script>
+</body>
+</html>
