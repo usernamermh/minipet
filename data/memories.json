@@ -195,6 +195,62 @@
       "timestamp": "2026-05-23T15:03:26.949748",
       "metadata": {},
       "importance": 5
+    },
+    {
+      "content": "怎么删除特定的目录，linux",
+      "role": "user",
+      "timestamp": "2026-05-23T16:49:50.149412",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "删除目录的命令有以下几种：\n\n## 1. 删除空目录\n```bash\nrmdir 目录名\n```\n\n## 2. 删除非空目录（包含文件和子目录）\n```bash\nrm -r 目录名    # 会提示确认\nrm -rf 目录名   # 强制删除，不提示\n```\n\n## 3. 删除多个目录\n```bash\nrm -rf 目录1 目录2 目录3\n```\n\n---\n\n⚠️ **注意事项：**\n- `rm -rf` 是**危险操作**，删除后无法恢复\n- 建议先使用 `ls` 确认目录内容\n- 可以用 `rm -ri` 增加交互确认（会询问每个文件）\n- 谨慎使用绝对路径，避免误删重要系统文件\n\n需要更具体的帮助吗？😊",
+      "role": "assistant",
+      "timestamp": "2026-05-23T16:49:50.154499",
+      "metadata": {},
+      "importance": 8
+    },
+    {
+      "content": "你好啊",
+      "role": "user",
+      "timestamp": "2026-05-23T17:10:14.621085",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "你好呀主人！团子在这里呢～🐰✨\n\n主人今天怎么样呀？团子好开心见到你！💕",
+      "role": "assistant",
+      "timestamp": "2026-05-23T17:10:14.622085",
+      "metadata": {},
+      "importance": 8
+    },
+    {
+      "content": "你好呀",
+      "role": "user",
+      "timestamp": "2026-05-24T19:50:32.135231",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "你好呀主人！团子在这里呢～🐰✨\n\n主人今天过得好吗？团子好想你呢！💕",
+      "role": "assistant",
+      "timestamp": "2026-05-24T19:50:32.136218",
+      "metadata": {},
+      "importance": 8
+    },
+    {
+      "content": "QQ",
+      "role": "user",
+      "timestamp": "2026-05-25T09:24:57.138115",
+      "metadata": {},
+      "importance": 5
+    },
+    {
+      "content": "主人主人～团子在这里呢！🐰\n\n今天想和团子玩什么呀？",
+      "role": "assistant",
+      "timestamp": "2026-05-25T09:24:57.157986",
+      "metadata": {},
+      "importance": 8
     }
   ]
 }
